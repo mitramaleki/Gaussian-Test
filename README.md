@@ -40,8 +40,23 @@ Here's what Bilby found:
 3. Changed some settings to see what happens
 4. Added comments so I'd remember what everything does
 
-## How To Run
-If you want to try (it's super simple):
+## How To Run This Shit
+
+1. **Install WSL** (Google it if you don't know - takes 3 reboots)
+
+2. **Open Ubuntu terminal** and run these exact commands:
 ```bash
-pip install bilby
-python my_try.py
+# Basic setup
+sudo apt update
+sudo apt install python3 python3-pip
+
+# Get conda because pip will make you go crazy trust me
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+
+ install what we need
+conda install -c conda-forge bilby numpy matplotlib jupyter
+#I prefer this sweetie
+jupyter notebook
+#google the rest and enjoy :D
